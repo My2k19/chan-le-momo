@@ -2,7 +2,7 @@
 /* ĐƠN VỊ THIẾT KẾ WEB WWW.CMSNT.CO | ZALO 0947838128 | FB.COM/NTGTANETWORK */
 session_start();
 date_default_timezone_set('Asia/Ho_Chi_Minh'); // Timezone VIET NAM <3
-$base_url = 'http://localhost/CMSNT/CHANLEMOMO/'; // Thay url web bạn
+$base_url = 'http://tudongcltx.com/CMSNT/CHANLEMOMO/'; // Thay url web bạn
 
 /* LƯU Ý CODE CHỈ CHẠY ĐƯỢC TRÊN PHP > 7.0, PHIÊN BẢN   */
 
@@ -14,7 +14,7 @@ class CMSNT
     {
         if (!$this->ketnoi)
         {
-            $this->ketnoi = mysqli_connect('localhost', 'root', '', 'chanlemomo') or die ('Vui lòng kết nối đến DATABASE');
+            $this->ketnoi = mysqli_connect('localhost', 'tudongcl_Cltx', 'Mymy2019', 'tudongcl_Cltx') or die ('Vui lòng kết nối đến DATABASE');
             mysqli_query($this->ketnoi, "set names 'utf8'");
         }
     }
